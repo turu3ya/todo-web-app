@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>家事タスクリスト</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>家事タスクリスト</h1>
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="タスク名" required>
+      <select id="frequency">
+        <option value="daily">毎日</option>
+        <option value="weekly">週1</option>
+        <option value="biweekly">2週に1回</option>
+        <option value="once">1回きり</option>
+      </select>
+      <input type="text" id="category" placeholder="カテゴリ">
+      <button type="submit">追加</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+</body>
+</html>

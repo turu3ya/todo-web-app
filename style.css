@@ -1,0 +1,31 @@
+body {
+  font-size: 18px; /* 文字大きめ */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  padding: 16px;
+}
+h1 {
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+input, select, button {
+  font-size: 18px;
+  padding: 8px;
+}
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
